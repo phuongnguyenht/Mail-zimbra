@@ -1,4 +1,4 @@
-# Install mail zimbra 8 on centos 7
+# Install mail zimbra 8.8.10 on centos 7
 
 1.Step 1: Install System Packages
 1.1 Install System Packages and disable selinux 
@@ -426,7 +426,6 @@ Change password mail
 [root@mail ~]# su - zimbra
 Last login: Thu Nov 22 08:57:21 EST 2018 on pts/2
 [zimbra@tshirtsport ~]$ zmprov sp admin vivas@123
-
 ``` 
 Referrent: 
 
