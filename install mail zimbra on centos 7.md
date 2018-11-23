@@ -425,8 +425,10 @@ perl /opt/zimbra/libexec/zmsetup.pl
 Change password mail 
 [root@mail ~]# su - zimbra
 Last login: Thu Nov 22 08:57:21 EST 2018 on pts/2
-[zimbra@tshirtsport ~]$ zmprov sp admin vivas@123
+[zimbra@tshirtsport ~]$ zmprov sp admin admin@123
 ``` 
 Referrent: 
-
+```
+https://zimbra.github.io/adminguide/latest/
 https://www.zimbra.com/docs/os/6.0.10/single_server_install/quick_start.1.09.html
+```
