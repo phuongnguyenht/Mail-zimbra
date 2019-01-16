@@ -432,3 +432,28 @@ Referrent:
 https://zimbra.github.io/adminguide/latest/
 https://www.zimbra.com/docs/os/6.0.10/single_server_install/quick_start.1.09.html
 ```
+
+4. Open port if you enable firewalld on centos 7
+```
+[root@mail ~]# firewall-cmd --permanent --add-port=161/udp
+[root@mail ~]# firewall-cmd --permanent --add-port=25/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=2220/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=80/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=110/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=143/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=389/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=443/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=587/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=465/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=993/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=995/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=7071/tcp
+[root@mail ~]# firewall-cmd --permanent --add-port=7780/tcp
+
+[root@mail ~]# firewall-cmd --reload
+```
+5. Check service zimbra 
+```
+[root@mail ~]# zmcontrol status
+```
+
