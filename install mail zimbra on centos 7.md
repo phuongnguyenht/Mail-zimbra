@@ -456,4 +456,10 @@ https://www.zimbra.com/docs/os/6.0.10/single_server_install/quick_start.1.09.htm
 ```
 [root@mail ~]# zmcontrol status
 ```
+6. Install DNS server
+```
+yum install bind bind-utils -y
+Config file name.conf
+Mail server Ip 192.168.12.132
+```
 

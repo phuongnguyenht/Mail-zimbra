@@ -1,0 +1,9 @@
+zone "mail.tshirtsport.com" {
+    type master;
+    file "/etc/named/zones/db.mail.tshirtsport.com"; # zone file path
+};
+
+#zone "192.168.in-addr.arpa" {
+#    type master;
+#    file "/etc/named/zones/db.168.192";  # 10.128.0.0/16 subnet
+#    };
