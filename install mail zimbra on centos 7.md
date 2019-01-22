@@ -25,6 +25,8 @@ hostnamectl set-hostname tshirtsport.com
 echo "192.168.12.132  mail.tshirtsport.com  mail " >> /etc/hosts
 
 cat /etc/hosts
+192.168.12.132  tshirtsport.com  mail 
+192.168.12.132  mail.tshirtsport.com 
 ```
 3. Step 3: Install Zimbra Collaboration Suite Open Source Edition
 ```
@@ -461,5 +463,19 @@ https://www.zimbra.com/docs/os/6.0.10/single_server_install/quick_start.1.09.htm
 yum install bind bind-utils -y
 Config file name.conf
 Mail server Ip 192.168.12.132
+Static hostname: tshirtsport.com
+Referrent: https://wiki.zimbra.com/wiki/Install_Zimbra_Collaboration_and_a_DNS_Server_with_Script
+Zimbra Collaboration 8.5 or above
+ZCS 8.5 or above onwards this attribute is now in ldap - zimbraMtaLmtpHostLookup
+
+ zmprov ms mtaserver.com zimbraMtaLmtpHostLookup native
+In case that you are using Single Server, be aware always of the Global Config as well:
+
+ zmprov mcf zimbraMtaLmtpHostLookup native
+Once this is done, you'll need to restart the mta:
+
+ zmmtactl restart
+From: https://wiki.zimbra.com/wiki/Incoming_Mail_Problems
+
 ```
 
