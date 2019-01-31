@@ -25,6 +25,8 @@ hostnamectl set-hostname tshirtsport.com
 echo "192.168.12.132  mail.tshirtsport.com  mail " >> /etc/hosts
 
 cat /etc/hosts
+127.0.0.1       localhost.localdomain localhost
+::1             localhost6.localdomain localhost6
 192.168.12.132  tshirtsport.com  mail 
 192.168.12.132  mail.tshirtsport.com 
 ```
